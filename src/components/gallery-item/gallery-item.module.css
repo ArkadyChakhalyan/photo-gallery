@@ -1,0 +1,18 @@
+.picture {
+    margin: 8px;
+    width: 254px;
+    height: 160px;
+    background: dodgerblue;
+    font-size: 80pt;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.picture:hover {
+    cursor: pointer;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.35);
+}

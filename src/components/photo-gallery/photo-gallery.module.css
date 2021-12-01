@@ -1,0 +1,47 @@
+.container {
+    position: absolute;
+    top: 64px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery {
+    list-style-type: none;
+    margin: 0;
+    padding: 16px 64px 32px 64px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.load {
+    margin-top: 16px;
+}
+
+.button {
+    font-size: 12pt;
+    border: 1px solid dodgerblue;
+    background: none;
+    color: dodgerblue;
+    border-radius: 4px;
+    width: 160px;
+    padding: 8px 6px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: dodgerblue;
+    color: #fff;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.35);
+}
+
+.button:focus {
+    outline: none;
+}
+
+.loading {
+    font-size: 14pt;
+}

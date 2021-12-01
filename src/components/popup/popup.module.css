@@ -1,0 +1,206 @@
+.bg {
+    background: rgba(0, 0, 0, 0.35);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup {
+    background: #fff;
+    padding: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.picture {
+    background: dodgerblue;
+    user-select: none;
+    font-size: 128pt;
+    color: white;
+    position: relative;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 400px;
+}
+
+.textarea {
+    position: relative;
+    width: 60%;
+}
+
+.input {
+    margin-top: 16px;
+    width: 100%;
+    font-family: 'Raleway';
+    font-weight: 600;
+    resize: none;
+    padding: 8px 64px 8px 16px;
+    margin-left: -48px;
+    border-radius: 32px;
+    border:rgba(0, 0, 0, 0.55) 1px solid;
+}
+
+.count {
+    font-weight: 400;
+    font-size: 13pt;
+}
+
+.likes {
+    align-self: flex-end;
+    margin-top: 8px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.like {
+    font-size: 11pt;
+    border: 1px solid dodgerblue;
+    background: none;
+    color: dodgerblue;
+    border-radius: 4px;
+    width: 64px;
+    padding: 6px 6px;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+.like.pressed {
+    background: dodgerblue;
+    color: #fff;
+}
+
+.like:hover {
+    background: dodgerblue;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.35);
+}
+
+.post {
+    position: absolute;
+    font-size: 11pt;
+    right: -24px;
+    top: 24px;
+    border: none;
+    background: none;
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.post:hover {
+    cursor: pointer;
+    color:rgba(0, 0, 0, 0.6);
+}
+
+.input:focus, .post:focus, .like:focus {
+    outline: none;
+}
+
+.comments {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 75%;
+    max-height: 80px;
+    padding: 0px 16px 24px 16px;
+    overflow: auto;
+    border-radius: 16px;
+    margin-bottom: -8px;
+}
+
+.comments>li+li {
+    margin-top: -16px;
+}
+
+.comment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+}
+
+.delete {
+    border: none;
+    background: none;
+    color:rgba(0, 0, 0, 0.35);
+    font-size: 24pt;
+    visibility: hidden;
+}
+
+.comment:hover>.delete, .delete:hover {
+    visibility: visible;
+}
+
+.delete:hover {
+    cursor: pointer;
+    color:rgba(0, 0, 0, 0.6);
+}
+
+.user {
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.left, .right {
+    background: none;
+    color: rgba(0, 0, 0, 0.4);
+    border: none;
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 64pt;
+    position: absolute;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.left:hover, .right:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+@media only screen and (max-width: 1200px) {
+    .picture {
+        width: 640px;
+        height: 320px;
+        font-size: 96pt;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .picture {
+        width: 360px;
+        height: 180px;
+        font-size: 64pt;
+    }
+}
+
